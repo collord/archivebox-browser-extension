@@ -87,7 +87,7 @@ export default class ArchiveBoxArchiver extends EventEmitter implements IArchive
     const body = new FormData()
     body.append("url", urls.join("\n"))
     body.append("tag", tags)
-    body.append("depth", "0")
+    body.append("depth", "1")
     body.append("parser", "url_list")
 
     this.addQueuedUrlCount(urls.length)
